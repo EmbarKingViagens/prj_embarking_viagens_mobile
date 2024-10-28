@@ -6,11 +6,13 @@ export default function CardOfertas(props) {
         <>
             <View style={styles.cardOfertas}>
                 <Text style={{
-        fontSize: 20,
-        color: props.color,
-        fontWeight: 'bold',
-    }}>{props.nomeOferta}</Text>
-
+                    fontSize: 20,
+                    color: props.color,
+                    fontWeight: 'bold',
+                }}>{props.nomeOferta}</Text>
+                <View style={styles.tempoOfertas}>
+                    <Text style={styles.txtTempoOfertas}>{props.txtTempoOfertas}</Text>
+                   </View>
             </View>
         </>
     )

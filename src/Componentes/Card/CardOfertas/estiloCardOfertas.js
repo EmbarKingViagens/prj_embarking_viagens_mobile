@@ -17,6 +17,19 @@ export default StyleSheet.create({
         borderRadius: 10,
         padding: 5,
     },
+    tempoOfertas:{
+        width:"40%",
+        height:"30%",
+        backgroundColor: pal5,
+        padding: 4,
+        borderTopLeftRadius: 5,
+        borderTopRightRadius: 5,
+        
+
+    },
+    txtTempoOfertas:{
+        color:pal3,
+    }
    
 
 });

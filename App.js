@@ -5,8 +5,8 @@ import CardOfertas from './src/Componentes/Card/CardOfertas/CardOfertas';
 export default function App() {
   return (
     <SafeAreaView style={styles.container}>
-    <Text>teste</Text>
-    <CardOfertas nomeOferta={"Rio de janeiro"} color={pal4}/>
+    
+    <CardOfertas nomeOferta={"Rio de janeiro"} color={pal4} txtTempoOfertas={"7 dias"}/>
     </SafeAreaView>
   );
 }

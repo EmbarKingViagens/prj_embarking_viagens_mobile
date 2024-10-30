@@ -50,7 +50,16 @@ export default StyleSheet.create({
         height: 100,
         borderRadius: 5,
         margin:0
-    }
-   
+    },
+    icons:{
+      flexDirection:"row",
+      margin: 3
+    },
+    txtIcons:{
+      flexDirection:"row"
+    },
+   icon:{
+     margin: 3
+   }
 
 });

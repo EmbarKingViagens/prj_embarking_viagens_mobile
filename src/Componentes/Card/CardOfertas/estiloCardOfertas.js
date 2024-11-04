@@ -3,12 +3,13 @@ import { pal1, pal2, pal3, pal4, pal5 } from '../../../estilo';
 
 export default StyleSheet.create({
   cardOfertas: {
-    width: '80%',
+    width: 300,
     backgroundColor: '#fff',
     borderBottomWidth: 10,
     borderRadius: 10,
     padding: 5,
     overflow: 'hidden',
+margin: 5
   },
   titulo: {
     fontSize: 20,
@@ -49,6 +50,8 @@ export default StyleSheet.create({
     flexDirection: 'row',
     margin: 3,
   },
+
+
   txtIcons: {
     flexDirection: 'row',
   },

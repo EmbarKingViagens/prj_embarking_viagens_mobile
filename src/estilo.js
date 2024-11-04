@@ -8,12 +8,13 @@ const pal5 = "#FF8F1F"//laranja
 
 const styles = StyleSheet.create({
     container: {
-      marginTop: StatusBar.currentHeight,
       flex: 1,
       justifyContent: 'center',
-      backgroundColor: '#ccc',
-      padding: 8,
+      backgroundColor: '#ccc', 
     },
+    carrosel:{
+      margin:10
+    }
   
   });
 export {pal1, pal2, pal3, pal4, pal5, styles}

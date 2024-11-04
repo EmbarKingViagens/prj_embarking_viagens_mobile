@@ -1,58 +1,55 @@
 import React from 'react';
-import { Text, View, Image } from 'react-native';
-import styles from './estiloCardOfertas';
+import { View, Text, Image } from 'react-native';
 import { Icon } from 'react-native-elements';
-export default function CardOfertas(props) {
+import styles from './estiloCardOfertas';
+
+const CardOfertas = ({
+  nomeOferta,
+  txtTempoOfertas,
+  link,
+  color,
+  simbolo1,
+  simbolo2,
+  simbolo3,
+  simbolo4,
+  txtIncluindo1,
+  txtIncluindo2,
+  txtIncluindo3,
+  txtIncluindo4,
+}) => {
   return (
-    <>
-      <View style={[styles.cardOfertas, { borderBottomColor: props.color }]}>
-        <Text style={[styles.titulo, { color: props.color }]}>
-          {props.nomeOferta}
-        </Text>
-        <View style={styles.divisor}>
-          <View>
-            <View style={styles.tempoOfertas}>
-        <Text style={[styles.subtitulo, { color: props.color }]}>
-      
-                {props.txtTempoOfertas}
-              </Text>
-            </View>
-             <View style={[styles.incluindo, { backgroundColor: props.color }]}>
-              <View style={styles.icons}>
-                <Icon
-                  name="hotel"
-                  style={styles.icon}
-                  type="font-awesome-5"
-                  color="#fff"
-                />
-                <Icon
-                  style={styles.icon}
-                  name="mug-hot"
-                  type="font-awesome-5"
-                  color="#fff"
-                />
-                <Icon
-                  style={styles.icon}
-                  name="lock"
-                  type="font-awesome-5"
-                  color="#fff"
-                />
-              </View>
-              <View style={styles.txtIcons}>
-                <Text style={styles.txtIncluindo}>{props.txtIncluindo1}</Text>
-                <Text style={styles.txtIncluindo}>{props.txtIncluindo2}</Text>
-                <Text style={styles.txtIncluindo}>{props.txtIncluindo3}</Text>
-              </View>
+    <View style={[styles.cardOfertas, { borderBottomColor: color }]}>
+      <Text style={[styles.titulo, { color }]}>{nomeOferta}</Text>
+      <View style={styles.divisor}>
+        <View>
+          <View style={styles.tempoOfertas}>
+            <Text style={[styles.subtitulo, { color }]}>{txtTempoOfertas}</Text>
+          </View>
+          <View style={[styles.incluindo, { backgroundColor: color }]}>
+            <View style={styles.icons}>
+              {[
+                { nome: simbolo1, texto: txtIncluindo1 },
+                { nome: simbolo2, texto: txtIncluindo2 },
+                { nome: simbolo3, texto: txtIncluindo3 },
+                { nome: simbolo4, texto: txtIncluindo4 },
+              ].map((item, index) => (
+                <View key={index} style={styles.iconContainer}>
+                  <Icon
+                    name={item.nome}
+                    style={styles.icon}
+                    type="font-awesome-5"
+                    color="#fff"
+                  />
+                  <Text style={styles.txtIncluindo}>{item.texto}</Text>
+                </View>
+              ))}
             </View>
           </View>
-          <Image
-            style={styles.imgOferta}
-            source={{
-              uri: props.link,
-            }}
-          />
         </View>
+        <Image style={styles.imgOferta} source={{ uri: link }} />
       </View>
-    </>
+    </View>
   );
-}
+};
+
+export default CardOfertas;

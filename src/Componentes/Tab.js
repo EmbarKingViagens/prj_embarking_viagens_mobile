@@ -51,7 +51,7 @@ export default (props) => (
       name="Chat"
       component={Home}
       options={{
-        tabBarLabel: 'Pontos',
+        tabBarLabel: 'Conversar',
         tabBarIcon: () => (
           <Icon name="comment" type="font-awesome-5" color={pal3} solid />
         ),

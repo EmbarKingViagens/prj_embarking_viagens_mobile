@@ -3,7 +3,7 @@ import { pal1, pal2, pal3, pal4, pal5, styles } from '../../src/estilo.js';
 import CarroselOfertas from '../Componentes/Carrosel/Ofertas'
 import Logo from "../Componentes/Logo/Logo"
 import CardRecentes from '../../src/Componentes/Card/CardRecentes/CardRecentes';
-
+import CarroselRecentes from "../Componentes/Carrosel/Recentes"
 import CardPacotes from '../../src/Componentes/Card/CardPacotes/CardPacotes.js';
 import Extra from '../../src/Componentes/Sticker/extra';
 import BarraBusca from "../Componentes/SearchBar/SearchBar.js"
@@ -16,12 +16,12 @@ export default function Home() {
         nome="amanda"
       />
       <ScrollView>
-<BarraBusca/>
+        <BarraBusca />
         <CarroselOfertas />
 
 
+        <CarroselRecentes />
 
-        <CardRecentes />
 
         <CardPacotes
           local={'Pequim (China)'}

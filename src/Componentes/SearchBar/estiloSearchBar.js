@@ -10,5 +10,11 @@ import {
 export default StyleSheet.create({
     barraBusca:{
         backgroundColor:"#fff",
+        flexDirection: "row",
+        justifyContent:"space-around"
+
+    },
+    icone:{
+        marginBottom:5
     }
 })

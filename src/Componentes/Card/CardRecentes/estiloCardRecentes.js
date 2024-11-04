@@ -11,7 +11,8 @@ export default StyleSheet.create({
 cardRecentes:{
   width: 100,
   height: 100,
-  backgroundColor: "#aaa"
+  backgroundColor: "#aaa",
+  margin:5
 }
 
 })

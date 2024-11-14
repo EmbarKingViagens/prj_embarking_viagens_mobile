@@ -1,4 +1,4 @@
-import {ScrollView, View} from "react-native"
+import {ScrollView, View, Text} from "react-native"
 import React from "react"
 import { pal1, pal2, pal3, pal4, pal5, styles } from '../../estilo';
 import CardOfertas from "../Card/CardOfertas/CardOfertas"
@@ -25,7 +25,21 @@ export default function CarroselOfertas(){
   "simbolo3":'lock',
   "simbolo4":'bus',
   "nomeOferta":"Rio de janeiro",
-  "color":pal3,
+  "color":pal4,
+  "txtTempoOfertas":'7 dias incluindo',
+  "txtIncluindo1":"hotel incluso",
+  "txtIncluindo2":"café da manha",
+  "txtIncluindo3":"seguro",
+  "txtIncluindo4":"onibus",
+  "link":"https://www.mappingmegan.com/wp-content/uploads/2014/12/shutterstock_134907293-002.jpg"
+},
+{
+  "simbolo1":"hotel",
+  "simbolo2":'mug-hot',
+  "simbolo3":'lock',
+  "simbolo4":'bus',
+  "nomeOferta":"Rio de janeiro",
+  "color":pal1,
   "txtTempoOfertas":'7 dias incluindo',
   "txtIncluindo1":"hotel incluso",
   "txtIncluindo2":"café da manha",
@@ -38,7 +52,9 @@ export default function CarroselOfertas(){
   return(
     <>
     <View  style={styles.carrosel}>
-
+<Text style = {styles.txtCarrosel}>
+Ofertas
+</Text>
     <ScrollView horizontal>
     {ListaOfertas.map ((c,key)  => 
    

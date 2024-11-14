@@ -14,6 +14,13 @@ const styles = StyleSheet.create({
     },
     carrosel:{
       margin:10
+    },
+    txtCarrosel:{
+      fontSize: 20,
+      fontWeight: "bold",
+      color: pal3,
+      marginLeft: 10
+
     }
   
   });

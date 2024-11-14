@@ -1,6 +1,7 @@
 import { Icon } from 'react-native-elements';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import Home from '../Pages/Home';
+import Pacotes from "../Pages/Pacotes"
 const Tab = createBottomTabNavigator();
 import { pal1, pal2, pal3, pal4, pal5, styles } from '../../src/estilo.js';
 export default (props) => (
@@ -28,7 +29,7 @@ export default (props) => (
     />
     <Tab.Screen
       name="Pacotes"
-      component={Home}
+      component={Pacotes}
       options={{
         tabBarLabel: 'Pacotes',
         tabBarIcon: () => (

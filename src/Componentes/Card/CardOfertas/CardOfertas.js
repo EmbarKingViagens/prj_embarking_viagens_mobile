@@ -16,9 +16,11 @@ const CardOfertas = ({
   txtIncluindo2,
   txtIncluindo3,
   txtIncluindo4,
+  txtPrecoAntigo,
+  txtPrecoNovo,
 }) => {
   return (
-    <View style={[styles.cardOfertas, { borderBottomColor: color }]}>
+    <View style={[styles.cardOfertas]}>
       <Text style={[styles.titulo, { color }]}>{nomeOferta}</Text>
       <View style={styles.divisor}>
         <View>
@@ -37,6 +39,7 @@ const CardOfertas = ({
                   <Icon
                     name={item.nome}
                     style={styles.icon}
+                    size={20}
                     type="font-awesome-5"
                     color="#fff"
                   />
@@ -48,6 +51,10 @@ const CardOfertas = ({
         </View>
         <Image style={styles.imgOferta} source={{ uri: link }} />
       </View>
+        <View style={[styles.preco, { backgroundColor: color }]}>
+          <Text style={styles.txtPrecoAntigo}>R$ {txtPrecoAntigo}</Text>
+          <Text style={styles.txtPrecoNovo}>R$ {txtPrecoNovo}</Text>
+        </View>
     </View>
   );
 };

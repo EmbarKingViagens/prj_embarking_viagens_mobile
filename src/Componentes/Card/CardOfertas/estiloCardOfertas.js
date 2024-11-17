@@ -5,11 +5,10 @@ export default StyleSheet.create({
   cardOfertas: {
     width: 300,
     backgroundColor: '#fff',
-    borderBottomWidth: 10,
     borderRadius: 10,
     padding: 5,
     overflow: 'hidden',
-margin: 5
+    margin: 5
   },
   titulo: {
     fontSize: 20,
@@ -18,7 +17,7 @@ margin: 5
     margin: 3,
   },
   subtitulo: {
-    fontSize: 20,
+    fontSize: 15,
     textAlign: 'center',
   },
   tempoOfertas: {
@@ -57,8 +56,13 @@ margin: 5
   },
   icon: {
     margin: 3,
+    
   },
   divisor: {
     flexDirection: 'row',
   },
+  preco:{
+    width: 100,
+    height: 30,
+  }
 });

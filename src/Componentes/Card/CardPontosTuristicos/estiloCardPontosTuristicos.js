@@ -4,7 +4,7 @@ export default StyleSheet.create({
   cardPontosTuristicos:{
     minHeight: 350,
     width: 220,
-    backgroundColor: pal3,
+    
     borderRadius: 20,
     overflow: 'hidden',
     marginLeft: 10,

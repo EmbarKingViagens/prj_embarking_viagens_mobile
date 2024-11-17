@@ -8,7 +8,8 @@ export default function CarroselOfertas(){
 {
  "id": 1,
  "icon":"hotel",
- "imagem": ""
+ "titulo": "copacabana palace hotel",
+ "imagem": "https://image-stock.mercuryholidays.co.uk/original/hotel/middle-east/united-arab-emirates/dubai/dubai-city/radisson-blu-hotel-dubai-waterfront/gallery/xxl-608782a_hb_p_001.jpg"
 },
 {
  "id": 2,
@@ -34,9 +35,9 @@ export default function CarroselOfertas(){
 Recentes
 </Text>
     <ScrollView horizontal>
-    {ListaRecentes.map ((c,key)  => 
+    {ListaRecentes.map ((c)  => 
    
-   <CardRecentes key={key} imagem={c.imagem} icon={c.icon} />
+   <CardRecentes key={c.id} img={c.imagem} icon={c.icon} titulo={c.titulo}/>
       )}
     </ScrollView>
     </View>

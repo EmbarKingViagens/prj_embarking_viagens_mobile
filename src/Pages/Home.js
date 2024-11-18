@@ -19,12 +19,9 @@ export default function Home() {
       <ScrollView>
         <BarraBusca />
         <CarroselOfertas />
-
-
         <CarroselRecentes />
-<CarroselPacotes/>
-<CarroselPontosTuristicos/>
-      
+        <CarroselPacotes />
+        <CarroselPontosTuristicos tipoPontoTuristico={"Pontos turisticos"} />
       </ScrollView>
     </SafeAreaView>
   )

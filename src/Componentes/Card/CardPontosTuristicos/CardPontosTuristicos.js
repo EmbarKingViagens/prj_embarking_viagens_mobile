@@ -1,15 +1,17 @@
-import { Text, View, Image } from "react-native"
+import { Text, View, Image } from 'react-native';
 import Botao from '../../Botao/Botao';
-import { Icon } from "react-native-elements"
-import styles from "./estiloCardPontosTuristicos"
-import { pal5 } from "../../../estilo"
+import { Icon } from 'react-native-elements';
+import styles from './estiloCardPontosTuristicos';
+import { pal5 } from '../../../estilo';
 export default function CardPontosTuristicos(props) {
   return (
     <>
-      <View style={styles.cardPontosTuristicos}>
-        <Image source={{ uri: props.img }} style={[styles.imagem, { backgroundColor: props.color }]} />
-        <Text style={styles.titulo}>{props.titulo}
-        </Text>
+      <View style={[styles.cardPontosTuristicos,{backgroundColor: props.color }]}>
+        <Image
+          source={{ uri: props.img }}
+          style={[styles.imagem, { backgroundColor: props.color }]}
+        />
+        <Text style={styles.titulo}>{props.titulo}</Text>
         <View style={styles.stars}>
           <Text style={styles.texto}>
             <Icon
@@ -44,18 +46,14 @@ export default function CardPontosTuristicos(props) {
             />
             ({props.qtdAvaliacoes})
           </Text>
-          <Text style={styles.texto}>{props.tipoPontoTuristico}
-          </Text>
-          <Text style={styles.texto}>{props.descricao}
-          </Text>
-          <Text style={styles.texto}>{props.tipoEntrada}
-          </Text>
+          <Text style={styles.texto}>{props.tipoPontoTuristico}</Text>
+          <Text style={styles.texto}>{props.descricao}</Text>
+          <Text style={styles.texto}>{props.tipoEntrada}</Text>
         </View>
 
-        <Text>
-        </Text>
-        <Botao txtBotao={"adcionar ao pacote"} />
+        <Text></Text>
+        <Botao txtBotao={'adcionar ao pacote'} />
       </View>
     </>
-  )
+  );
 }

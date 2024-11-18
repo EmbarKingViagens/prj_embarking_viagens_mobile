@@ -24,7 +24,13 @@ export default StyleSheet.create({
   icon: {
     zIndex: 1,
     
-    
-  }
+  },
+  titulo:{
+    color: pal3,
+    marginLeft: 3,
+    fontWeight: "bold",
+    overflow: "hidden",
+    flexDirection: "row",
+  },
 
 })

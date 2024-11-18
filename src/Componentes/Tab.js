@@ -2,6 +2,7 @@ import { Icon } from 'react-native-elements';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import Home from '../Pages/Home';
 import Pacotes from "../Pages/Pacotes"
+import PontosTuristicos from '../Pages/PontosTuristicos.js';
 const Tab = createBottomTabNavigator();
 import { pal1, pal2, pal3, pal4, pal5, styles } from '../../src/estilo.js';
 export default (props) => (
@@ -40,7 +41,7 @@ export default (props) => (
     {/* o location-dot n está functionando */}
     <Tab.Screen
       name="Pontos turisticos"
-      component={Home}
+      component={PontosTuristicos}
       options={{
         tabBarLabel: 'Pontos',
         tabBarIcon: () => (
@@ -48,13 +49,15 @@ export default (props) => (
         ),
       }}
     />
+    {/*o icone pode ser ou coração ou estrela */}
     <Tab.Screen
       name="Chat"
       component={Home}
       options={{
-        tabBarLabel: 'Conversar',
+        tabBarLabel: 'Favoritos',
         tabBarIcon: () => (
-          <Icon name="comment" type="font-awesome-5" color={pal3} solid />
+          
+          <Icon name="heart" type="font-awesome-5" color={pal3} solid />
         ),
       }}
     />

@@ -7,9 +7,16 @@ export default function cardRecentes(props) {
     <>
       <Pressable onPress={props.onPress}>
         <View style={styles.cardRecentes}>
-          <Text>{props.titulo}</Text>
+          <Text style={styles.titulo}>{props.titulo}</Text>
           <Image source={{ uri: props.img }} style={styles.imagem} />
-          <Icon name={props.icon} style={styles.icon} reverse type="font-awesome-5" size={15} color={pal3} />
+          <Icon
+            name={props.icon}
+            style={styles.icon}
+            reverse
+            type="font-awesome-5"
+            size={10}
+            color={pal3}
+          />
           {/*TODO: fazer a estilização do card recentes no figma e passar para codigo aqui, fazer até sexta feira */}
         </View>
       </Pressable>

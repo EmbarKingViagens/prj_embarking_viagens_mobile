@@ -8,7 +8,7 @@ export default StyleSheet.create({
     borderRadius: 10,
     padding: 5,
     overflow: 'hidden',
-    margin: 5
+    margin: 5,
   },
   titulo: {
     fontSize: 20,
@@ -40,29 +40,45 @@ export default StyleSheet.create({
     fontSize: 10,
   },
   imgOferta: {
+    zIndex: 1,
     width: 100,
-    height: 100,
+    height: '100%',
     borderRadius: 5,
-    margin: 0,
+    marginLeft: -35,
   },
   icons: {
     flexDirection: 'row',
     margin: 3,
   },
-
-
   txtIcons: {
     flexDirection: 'row',
   },
   icon: {
     margin: 3,
-    
   },
-  divisor: {
+  divisor1: {
     flexDirection: 'row',
   },
-  preco:{
-    width: 100,
-    height: 30,
-  }
+  divisor2: {
+    flexDirection: 'column',
+  },
+  preco: {
+    width: 140,
+    height: 55,
+    borderRadius: 5,
+    margin: 3,
+  },
+  txtPrecoAntigo: {
+    fontSize: 14,
+    textDecorationLine: 'line-through',
+    fontWeight: 'light',
+    color: pal5,
+    marginLeft: 10,
+  },
+  txtPrecoNovo: {
+    fontSize: 25,
+    fontWeight: 'light',
+    color: '#fff',
+    marginLeft: 10,
+  },
 });

@@ -13,7 +13,6 @@ export default StyleSheet.create({
   imagem:{
     width:"100%",
     height:150
-
   },
   titulo:{
     position: "relative",

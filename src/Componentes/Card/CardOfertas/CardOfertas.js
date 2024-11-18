@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, Image } from 'react-native';
+import { View, Text, Image, ScrollView } from 'react-native';
 import { Icon } from 'react-native-elements';
 import styles from './estiloCardOfertas';
 
@@ -20,15 +20,16 @@ const CardOfertas = ({
   txtPrecoNovo,
 }) => {
   return (
-    <View style={[styles.cardOfertas]}>
+    <View style={styles.cardOfertas}>
       <Text style={[styles.titulo, { color }]}>{nomeOferta}</Text>
-      <View style={styles.divisor}>
+      <View style={styles.divisor1}>
+      <View style={styles.divisor2}>
         <View>
           <View style={styles.tempoOfertas}>
             <Text style={[styles.subtitulo, { color }]}>{txtTempoOfertas}</Text>
           </View>
           <View style={[styles.incluindo, { backgroundColor: color }]}>
-            <View style={styles.icons}>
+            <ScrollView horizontal style={styles.icons}>
               {[
                 { nome: simbolo1, texto: txtIncluindo1 },
                 { nome: simbolo2, texto: txtIncluindo2 },
@@ -46,14 +47,15 @@ const CardOfertas = ({
                   <Text style={styles.txtIncluindo}>{item.texto}</Text>
                 </View>
               ))}
-            </View>
+            </ScrollView>
           </View>
         </View>
-        <Image style={styles.imgOferta} source={{ uri: link }} />
-      </View>
         <View style={[styles.preco, { backgroundColor: color }]}>
           <Text style={styles.txtPrecoAntigo}>R$ {txtPrecoAntigo}</Text>
           <Text style={styles.txtPrecoNovo}>R$ {txtPrecoNovo}</Text>
+        </View>
+      </View>
+        <Image style={styles.imgOferta} source={{ uri: link }} />
         </View>
     </View>
   );

@@ -18,8 +18,8 @@ export default function CarroselOfertas() {
       "txtIncluindo2": "café da manha",
       "txtIncluindo3": "seguro",
       "txtIncluindo4": "onibus",
-      "precoAntigo": 10,
-      "precoNovo": 20,
+      "precoAntigo": "10,50",
+      "precoNovo": "20,00",
       "link": "https://www.mappingmegan.com/wp-content/uploads/2014/12/shutterstock_134907293-002.jpg"
     },
     {

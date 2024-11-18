@@ -3,7 +3,7 @@ import React from "react"
 import { pal1, pal2, pal3, pal4, pal5, styles } from '../../estilo';
 import CardPacotes from "../Card/CardPacotes/CardPacotes"
 import Extra from "../Sticker/extra"
-export default function CarroselOfertas(){
+export default function CarroselPacotes(){
   //TODO: fazer conexão de dados para não precisar deixar tudo no codigo  
   const pacotes =[
 {
